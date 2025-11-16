@@ -1,8 +1,8 @@
-\# 🎤 Bluetooth Voice Controlled Robot Car
+# 🎤 Bluetooth Voice Controlled Robot Car
 
 
 
-This mode uses \*\*Arduino Bluetooth Controller (Voice Mode)\*\* app.  
+This mode uses **Arduino Bluetooth Controller (Voice Mode)** app.  
 
 Spoken voice commands are converted into characters and sent via HC-05.
 
@@ -12,7 +12,7 @@ Spoken voice commands are converted into characters and sent via HC-05.
 
 
 
-\## 🎙 Voice Commands
+## 🎙 Voice Commands
 
 
 
@@ -36,25 +36,15 @@ Spoken voice commands are converted into characters and sent via HC-05.
 
 
 
-\## 🛠 Hardware Used
+## 🛠 Hardware Used
 
-\- Arduino UNO  
+- Arduino UNO  
 
-\- HC-05 Bluetooth Module  
+- HC-05 Bluetooth Module  
 
-\- L298N Motor Driver  
+- L298N Motor Driver  
 
-\- 4 × DC Motors  
-
-
-
----
-
-
-
-\## 📱 App Required  
-
-\*\*Arduino Bluetooth Controller → Voice Mode\*\*
+- 4 × DC Motors  
 
 
 
@@ -62,7 +52,17 @@ Spoken voice commands are converted into characters and sent via HC-05.
 
 
 
-\## ▶️ Code File  
+## 📱 App Required  
+
+**Arduino Bluetooth Controller → Voice Mode**
+
+
+
+---
+
+
+
+## ▶️ Code File  
 
 `bluetooth\_voice.ino`
 
@@ -72,9 +72,10 @@ Spoken voice commands are converted into characters and sent via HC-05.
 
 
 
-\## 📷 Project Image  
+## 📷 Project Image  
 
-!\[Car](../images/car1.jpeg)
+![Car](../images/car1.jpeg)
+
 
 
 
