@@ -1,10 +1,10 @@
-\# 🤖 Obstacle Avoidance Robot Car
+# 🤖 Obstacle Avoidance Robot Car
 
 
 
 This mode makes the robot drive automatically without Bluetooth.  
 
-It uses a \*\*servo + ultrasonic sensor\*\* to detect obstacles and choose a direction.
+It uses a **servo + ultrasonic sensor** to detect obstacles and choose a direction.
 
 
 
@@ -12,15 +12,15 @@ It uses a \*\*servo + ultrasonic sensor\*\* to detect obstacles and choose a dir
 
 
 
-\## 💡 How it Works
+## 💡 How it Works
 
 
 
-1\. Servo rotates ultrasonic sensor \*\*left – center – right\*\*  
+1. Servo rotates ultrasonic sensor **left – center – right**  
 
-2\. Car reads distance  
+2. Car reads distance  
 
-3\. If obstacle < 20cm:  
+3. If obstacle < 20cm:  
 
 &nbsp;  - Stop  
 
@@ -28,7 +28,7 @@ It uses a \*\*servo + ultrasonic sensor\*\* to detect obstacles and choose a dir
 
 &nbsp;  - Turn left or right based on free space  
 
-4\. Otherwise continue forward
+4. Otherwise continue forward
 
 
 
@@ -36,19 +36,19 @@ It uses a \*\*servo + ultrasonic sensor\*\* to detect obstacles and choose a dir
 
 
 
-\## 🔧 Required Hardware
+## 🔧 Required Hardware
 
-\- Arduino UNO  
+- Arduino UNO  
 
-\- HC-SR04 Ultrasonic Sensor  
+- HC-SR04 Ultrasonic Sensor  
 
-\- SG90 Servo Motor  
+- SG90 Servo Motor  
 
-\- L298N Motor Driver  
+- L298N Motor Driver  
 
-\- 12V Battery  
+- 12V Battery  
 
-\- Optional: Mode switch
+- Optional: Mode switch
 
 
 
@@ -56,7 +56,7 @@ It uses a \*\*servo + ultrasonic sensor\*\* to detect obstacles and choose a dir
 
 
 
-\## ▶️ Code File  
+## ▶️ Code File  
 
 `obstacle\_avoidance.ino`
 
@@ -66,9 +66,10 @@ It uses a \*\*servo + ultrasonic sensor\*\* to detect obstacles and choose a dir
 
 
 
-\## 🖼 Image  
+## 🖼 Image  
 
-!\[Car](../images/car1.jpeg)
+![Car](../images/car1.jpeg)
+
 
 
 
