@@ -2,7 +2,7 @@
 
 
 
-This code allows the robot car to be controlled manually using the \*\*Bluetooth RC Controller\*\* mobile app.  
+This code allows the robot car to be controlled manually using the **Bluetooth RC Controller** mobile app.  
 
 The HC-05 module receives commands and drives the motors accordingly.
 
@@ -56,9 +56,9 @@ The HC-05 module receives commands and drives the motors accordingly.
 
 ## 📱 Mobile App  
 
-\*\*Bluetooth RC Controller (Play Store)\*\*  
+**Bluetooth RC Controller (Play Store)**  
 
-Connect to: \*\*HC-05 → 9600 baud\*\*
+Connect to: **HC-05 → 9600 baud**
 
 
 
@@ -78,7 +78,8 @@ Connect to: \*\*HC-05 → 9600 baud\*\*
 
 ## 📷 Project Image
 
-!\[Car](../images/car1.jpeg)
+![Car](../images/car1.jpeg)
+
 
 
 
