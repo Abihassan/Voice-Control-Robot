@@ -1,117 +1,167 @@
-# 🚗 Arduino Multi-Mode Robot Car (Bluetooth RC + Voice + Obstacle Avoidance)
+# 🚗 Arduino Multi-Mode Smart Robot Car  
+### **Bluetooth RC | Voice Control | Obstacle Avoidance**
 
-This project is a 4-wheel robot car built in my first year using Arduino.  
-It supports **three control modes**:
+A fully-documented Arduino robot car project built using low-cost components.  
+It supports **three complete modes**, each with its own Arduino code:
 
-1. **Bluetooth RC Control**  
-2. **Bluetooth Voice Control**  
-3. **Obstacle Avoidance Mode (switch ON)**  
+1️⃣ **Bluetooth RC Mode** (manual control with mobile app)  
+2️⃣ **Bluetooth Voice Control** (voice commands via HC-05)  
+3️⃣ **Obstacle Avoidance Mode** (autonomous navigation with ultrasonic sensor + servo)
 
----
-
-## 📸 Project Image
-![Robot Car](car1.jpeg)
+This repository rebuilds the entire project from scratch – optimized, clean, and GitHub-ready.
 
 ---
 
-## 🔧 Hardware Components
+## 📸 Project Images
 
-| No | Component |
-|----|-----------|
-| 1 | Arduino Uno |
-| 2 | L298N Motor Driver |
-| 3 | HC-05 Bluetooth Module |
-| 4 | 12V Li-Po Battery ×2 |
-| 5 | Male-Female Jumper Wires |
-| 6 | Male-Male Jumper Wires |
-| 7 | 6V DC Motors ×4 |
-| 8 | Smartphone |
-| 9 | SG90 Servo Motor |
-|10 | HC-SR04 Ultrasonic Sensor |
-|11 | Switch |
-|12 | Battery Holder |
+| Robot Car | Circuit Diagram |
+|-----------|-----------------|
+| ![Robot Car](images/car1.jpeg) | ![Circuit Diagram](images/circuit_fritzing.png) |
 
 ---
 
-## 📱 Mobile Apps Used
+# 🔥 Features
 
-### 1️⃣ **Bluetooth RC Controller**
-Used to control the car manually:
-- Forward  
-- Backward  
-- Left  
-- Right  
+### ✔ Bluetooth-based RC driving  
+Use mobile app buttons to move the robot: forward, backward, left, right, stop.
 
-Sends characters:  
+### ✔ Voice-Controlled Navigation  
+Commands like **“Go”, “Stop”, “Left”, “Back”** are interpreted into signals via HC-05.
+
+### ✔ Full Obstacle Avoidance Mode  
+The robot automatically scans using a **servo-mounted ultrasonic sensor** and avoids collisions by choosing the best path.
+
+### ✔ Modular Project Structure  
+Each mode is isolated in its own folder with its own code + README.
+
+### ✔ Clean Documentation  
+Circuit diagram, wiring tables, images, and video support.
+
+---
+
+
+Robot-Car-Project/
+│
+├── 1_Bluetooth_RC/
+│ ├── bluetooth_rc.ino
+│ └── README.md
+│
+├── 2_Bluetooth_Voice/
+│ ├── bluetooth_voice.ino
+│ └── README.md
+│
+├── 3_Obstacle_Avoidance/
+│ ├── obstacle_avoidance.ino
+│ └── README.md
+│
+├── images/
+│ ├── car1.jpeg
+│ ├── circuit_diagram_ascii.txt
+│ └── circuit_fritzing.png 
+│
+├── videos/
+│ └── demo.mp4
+│
+└── README.md <-- Main
+
+
+
+---
+
+# 🔧 Hardware Components
+
+| Component | Qty | Description |
+|----------|-----|-------------|
+| Arduino Uno | 1 | Main controller |
+| L298N Motor Driver | 1 | Controls 4 DC motors |
+| HC-05 Bluetooth Module | 1 | Wireless communication |
+| 6V DC Motors | 4 | Wheel motors |
+| HC-SR04 Ultrasonic Sensor | 1 | Distance measurement |
+| SG90 Servo Motor | 1 | Rotates the ultrasonic sensor |
+| 12V Li-Po Battery | 2 | Power source |
+| Switch | 1 | Toggle auto mode |
+| Jumper Wires | Many | Connections |
+| Battery Holder | 1 | Secure mount |
+
+---
+
+# 📡 Control Modes Overview
+
+### **1️⃣ Bluetooth RC Mode**
+App sends characters:  
 `F, B, L, R, S`
 
----
-
-### 2️⃣ **Arduino Bluetooth Control (Voice Control)**
-Voice commands such as:
-- *Go* → `G`  
-- *Stop* → `T`  
-- *Back*  
-- *Left*  
-- *Right*  
+👉 Located in: `/1_Bluetooth_RC/`
 
 ---
 
-### 3️⃣ **Obstacle Avoidance Mode**
-When you **turn ON the switch**, Bluetooth is ignored and the robot works in **autonomous mode**.
+### **2️⃣ Bluetooth Voice Mode**
+Voice app sends characters:  
+`G, T, L, R, B`
+
+👉 Located in: `/2_Bluetooth_Voice/`
 
 ---
 
-## 🧠 Features
-✔️ Manual Bluetooth RC mode  
-✔️ Voice-controlled mode  
-✔️ Obstacle avoidance using:
-- Ultrasonic sensor  
-- Servo rotation scanning left/center/right  
+### **3️⃣ Obstacle Avoidance**
+Automatically drives → scans left & right → chooses safest direction.
 
-✔️ Multi-mode switching using a single switch  
-✔️ Clean & simple Arduino code  
+👉 Located in: `/3_Obstacle_Avoidance/`
 
 ---
 
-## 🛠️ Wiring Overview
+# ⚙ Wiring Overview (Quick Reference)
 
-### **L298N Motor Driver → Arduino**
-- IN1 → 7  
-- IN2 → 6  
-- IN3 → 5  
-- IN4 → 4  
-
-### **Ultrasonic Sensor**
-- Trig → 10  
-- Echo → 11  
-
-### **Servo**
-- Signal → 9  
-
-### **Bluetooth HC-05**
-- TX → RX (pin 0)  
-- RX → TX (pin 1)  
-> Use 3.3V divider for safety on HC-05 RX.
-
-### **Mode Switch**
-- Switch output → pin 12
+| Module | Arduino Pin |
+|--------|-------------|
+| Ultrasonic TRIG | D10 |
+| Ultrasonic ECHO | D11 |
+| Servo Signal | D9 |
+| L298N IN1 | D7 |
+| L298N IN2 | D6 |
+| L298N IN3 | D5 |
+| L298N IN4 | D4 |
+| HC-05 TX | D0 (RX) |
+| HC-05 RX | D1 (TX, via resistor divider) |
+| Mode Switch | D12 |
 
 ---
 
-## ▶️ How to Use
+# ▶️ Demo Video
 
-### **1. Bluetooth RC Control**
-Open app → connect HC-05 → press directional buttons.
+Place your video inside `/videos/demo.mp4` and link it:
 
-### **2. Voice Control**
-Open voice app → say:  
-*“Go”, “Back”, “Left”, “Stop”…*
+Watch Demo Video
 
-### **3. Obstacle Avoidance**
-Turn ON the hardware switch → robot becomes autonomous.
+
 
 ---
 
-## 📁 Folder Structure
+# 💡 How to Upload Code to Arduino
+
+1. Connect Arduino to USB  
+2. Open `.ino` file  
+3. Select:
+   - Board: **Arduino Uno**
+   - Port: your COM port  
+4. Click **Upload**
+
+---
+
+# ⭐ Contributing  
+Improvements, pull requests, and forks are welcome!
+
+---
+
+# 📜 License  
+Choose any license you prefer (MIT recommended).  
+I can generate one if you'd like.
+
+---
+
+# 🎉 Credits  
+Reconstructed, documented, and organized from scratch based on original project built in first year.
+
+
+# 🗂 Repository Structure
 
