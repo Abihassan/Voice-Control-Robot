@@ -1,4 +1,4 @@
-\# 🚗 Bluetooth RC Controlled Robot Car
+# 🚗 Bluetooth RC Controlled Robot Car
 
 
 
@@ -12,7 +12,7 @@ The HC-05 module receives commands and drives the motors accordingly.
 
 
 
-\## 🔧 Controls
+## 🔧 Controls
 
 
 
@@ -36,17 +36,17 @@ The HC-05 module receives commands and drives the motors accordingly.
 
 
 
-\## 🛠 Hardware Used
+## 🛠 Hardware Used
 
-\- Arduino UNO  
+- Arduino UNO  
 
-\- HC-05 Bluetooth Module  
+- HC-05 Bluetooth Module  
 
-\- L298N Motor Driver  
+- L298N Motor Driver  
 
-\- 4 × 6V DC Motors  
+- 4 × 6V DC Motors  
 
-\- 12V Battery  
+- 12V Battery  
 
 
 
@@ -54,7 +54,7 @@ The HC-05 module receives commands and drives the motors accordingly.
 
 
 
-\## 📱 Mobile App  
+## 📱 Mobile App  
 
 \*\*Bluetooth RC Controller (Play Store)\*\*  
 
@@ -66,7 +66,7 @@ Connect to: \*\*HC-05 → 9600 baud\*\*
 
 
 
-\## ▶️ Code File  
+## ▶️ Code File  
 
 `bluetooth\_rc.ino`
 
@@ -76,9 +76,10 @@ Connect to: \*\*HC-05 → 9600 baud\*\*
 
 
 
-\## 📷 Project Image
+## 📷 Project Image
 
 !\[Car](../images/car1.jpeg)
+
 
 
 
