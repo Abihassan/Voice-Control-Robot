@@ -22,47 +22,47 @@ This repository rebuilds the entire project from scratch – optimized, clean, a
 
 # 🔥 Features
 
-### Bluetooth-based RC driving  
+### ✔ Bluetooth-based RC driving  
 Use mobile app buttons to move the robot: forward, backward, left, right, stop.
 
-### Voice-Controlled Navigation  
+### ✔ Voice-Controlled Navigation  
 Commands like **“Go”, “Stop”, “Left”, “Back”** are interpreted into signals via HC-05.
 
-### Full Obstacle Avoidance Mode  
+### ✔ Full Obstacle Avoidance Mode  
 The robot automatically scans using a **servo-mounted ultrasonic sensor** and avoids collisions by choosing the best path.
 
-### Modular Project Structure  
+### ✔ Modular Project Structure  
 Each mode is isolated in its own folder with its own code + README.
 
-### Clean Documentation  
+### ✔ Clean Documentation  
 Circuit diagram, wiring tables, images, and video support.
 
 ---
 
 
-### Robot-Car-Project/
-### │
-### ├── 1_Bluetooth_RC/
-### │ ├── bluetooth_rc.ino
-### │ └── README.md
-### │
-### ├── 2_Bluetooth_Voice/
-### │ ├── bluetooth_voice.ino
-### │ └── README.md
-### │
-### ├── 3_Obstacle_Avoidance/
-### │ ├── obstacle_avoidance.ino
-### │ └── README.md
-### │
-### ├── images/
-### │ ├── car1.jpeg
-### │ ├── circuit_diagram_ascii.txt
-### │ └── circuit_fritzing.png 
-### │
-### ├── videos/
-### │ └── demo.mp4
-### │
-### └── README.md <-- Main
+#### Robot-Car-Project/
+#### │
+#### ├── 1_Bluetooth_RC/
+#### │ ├── bluetooth_rc.ino
+#### │ └── README.md
+#### │
+#### ├── 2_Bluetooth_Voice/
+#### │ ├── bluetooth_voice.ino
+#### │ └── README.md
+#### │
+#### ├── 3_Obstacle_Avoidance/
+#### │ ├── obstacle_avoidance.ino
+#### │ └── README.md
+#### │
+#### ├── images/
+#### │ ├── car1.jpeg
+#### │ ├── circuit_diagram_ascii.txt
+#### │ └── circuit_fritzing.png 
+#### │
+#### ├── videos/
+#### │ └── demo.mp4
+#### │
+#### └── README.md <-- Main
 
 
 
