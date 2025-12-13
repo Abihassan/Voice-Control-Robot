@@ -39,6 +39,7 @@ Circuit diagram, wiring tables, images, and video support.
 
 ---
 
+# 🗂 Repository Structure
 
 #### Robot-Car-Project/
 #### │
@@ -163,5 +164,5 @@ I can generate one if you'd like.
 Reconstructed, documented, and organized from scratch based on original project built in first year.
 
 
-# 🗂 Repository Structure
+
 
