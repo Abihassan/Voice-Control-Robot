@@ -16,7 +16,7 @@ This repository rebuilds the entire project from scratch – optimized, clean, a
 
 | Robot Car | Circuit Diagram |
 |-----------|-----------------|
-| ![Robot Car](images/car1.jpeg) | ![Circuit Diagram](images/circuit_fritzing.png) |
+| ![Robot Car](images/car.png) | ![Circuit Diagram](images/circuit_diagram.png) |
 
 ---
 
