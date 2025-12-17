@@ -36,4 +36,5 @@ It uses a **servo + ultrasonic sensor** to detect obstacles and choose a directi
 
 | Robot Car | 
 |-----------|
-| ![Robot Car](../images/car1.jpeg) |
+| ![Robot Car](../images/car.jpeg) |
+
