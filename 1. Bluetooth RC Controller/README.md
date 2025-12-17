@@ -36,6 +36,10 @@ Connect to: **HC-05 → 9600 baud**
 `bluetooth_rc.ino`
 
 ---
+## 📸 Project Images
 
-## 📷 Project Image
-![Car](../images/car1.jpeg)
+| Robot Car | 
+|-----------|
+| ![Robot Car](../images/car1.jpeg) |
+
+
