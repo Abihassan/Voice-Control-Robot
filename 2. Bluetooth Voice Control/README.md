@@ -35,5 +35,8 @@ Spoken voice commands are converted into characters and sent via HC-05.
 
 ---
 
-## 📷 Project Image  
-![Car](../images/car1.jpeg)
+## 📸 Project Images
+
+| Robot Car | 
+|-----------|
+| ![Robot Car](../images/car1.jpeg) |
