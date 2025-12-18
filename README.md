@@ -41,30 +41,31 @@ Circuit diagram, wiring tables, images, and video support.
 
 # 🗂 Repository Structure
 
-#### Robot-Car-Project/
-#### │
-#### ├── 1_Bluetooth_RC/
-#### │ ├── bluetooth_rc.ino
-#### │ └── README.md
-#### │
-#### ├── 2_Bluetooth_Voice/
-#### │ ├── bluetooth_voice.ino
-#### │ └── README.md
-#### │
-#### ├── 3_Obstacle_Avoidance/
-#### │ ├── obstacle_avoidance.ino
-#### │ └── README.md
-#### │
-#### ├── images/
-#### │ ├── car1.jpeg
-#### │ ├── circuit_diagram_ascii.txt
-#### │ └── circuit_fritzing.png 
-#### │
-#### ├── videos/
-#### │ └── demo.mp4
-#### │
-#### └── README.md <-- Main
-
+```
+Robot-Car-Project/
+│
+├── 1_Bluetooth_RC/
+│ ├── bluetooth_rc.ino
+│ └── README.md
+│
+├── 2_Bluetooth_Voice/
+│ ├── bluetooth_voice.ino
+│ └── README.md
+│
+├── 3_Obstacle_Avoidance/
+│ ├── obstacle_avoidance.ino
+│ └── README.md
+│
+├── images/
+│ ├── car1.jpeg
+│ ├── circuit_diagram_ascii.txt
+│ └── circuit_fritzing.png 
+│
+├── videos/
+│ └── demo.mp4
+│
+└── README.md <-- Main
+```
 
 
 ---
